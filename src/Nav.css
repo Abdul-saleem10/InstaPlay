@@ -1,0 +1,39 @@
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+.nav_black {
+  background-color: #224368;
+}
+.nav_logo {
+  position: fixed;
+  left: 20px;
+  width: 100px;
+  object-fit: contain;
+}
+
+
+.searchinput{
+  border: 1px solid white;
+  border-right: none;
+  outline: none;
+  background-color: rgba(255, 255,255,0.1) !important;
+  color: white;
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+}
+.searchinput::placeholder{
+  color: white;
+}
+
+.searchbtn{
+  background: #ff6f58;
+  border: 1px solid white;
+  border-left: none;
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+.app {
+  background-color: #181818;
+}
+
+.page-link {
+  border:none;
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.page-link:hover{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #ff6f58;
+  background: none;
+  border-bottom:1px solid #ff6f58;
+}
+.active-page-link{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #ff6f58;
+  background: none;
+  border-bottom:1px solid #ff6f58;
+}
