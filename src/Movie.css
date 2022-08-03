@@ -1,3 +1,20 @@
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
 .banner {
   min-height: 100vh;
   background: linear-gradient(70deg, #181818 30%, transparent, transparent);
@@ -255,3 +272,4 @@
     padding: 20px;
   }
 }
+

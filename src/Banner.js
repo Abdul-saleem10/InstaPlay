@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import requests from "./requests";
-
-import moneyheistimg from "./images/moneyhesistcover.jpg";
 import "./Banner.css";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
@@ -30,7 +28,7 @@ function Banner() {
       className="bannerhome"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url(${`${base_url}${movie.poster_path || movie.backdrop_path || moneyheistimg }`})`,
+        backgroundImage: `url(${`${base_url}${movie.poster_path || movie.backdrop_path }`})`,
         backgroundPosition: "center center",
       }}
     >
