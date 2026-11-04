@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # react-scripts 4 bundles webpack 4, which uses the legacy MD4 hash that
+  # OpenSSL 3 (Node 17+) disables by default. Pin Node 18 and re-enable the
+  # legacy OpenSSL provider so the build can run.
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
+  # Netlify sets CI=true, which makes Create React App fail on lint warnings.
+  CI = "false"
+
+# Serve index.html for client-side routes (react-router).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
